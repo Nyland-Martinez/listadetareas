@@ -50,9 +50,9 @@ return (
         >
             Agregar
         </button>
-        <div className>
+        <div>
             {tasks.map((task, index) => (
-            <div className={styles.container}
+            <div
                 key={index}
                 task={task}
             >
@@ -71,7 +71,7 @@ return (
                 checked={task.checked}
                 onChange={() => ToggleTask(index)}
                 />
-            <div>
+            <div className={styles.btn}>
                 <button
                 className={styles.btn2}
                 onClick={() => DeleteTask(index)}
